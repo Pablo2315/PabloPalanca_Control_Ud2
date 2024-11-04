@@ -14,10 +14,12 @@ public class Madre extends Thread{
         try {
             System.out.println("Mami llega al cumpleaños");
             Thread.sleep(1000);
-            for (int i = 0; i >= 6; i++) {
-            	mesa.dejarTrozo();
-            	System.out.println("Mamá pone la tarta");
-            }
+            mesa.dejarTrozo();
+            mesa.dejarTrozo();
+            mesa.dejarTrozo();
+            mesa.dejarTrozo();
+            mesa.dejarTrozo();
+            mesa.dejarTrozo();
             System.out.println("Mamá se va de la fiesta");
         } catch (Exception e) {
             Thread.currentThread().interrupt();
