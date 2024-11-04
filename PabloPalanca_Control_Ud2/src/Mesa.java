@@ -7,7 +7,7 @@ public class Mesa {
 	public synchronized void cogerTrozo() {
 		while (this.trozosTarta == 0)
 			try {
-				this.wait();
+				wait();
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -19,7 +19,7 @@ public class Mesa {
 	public synchronized void dejarTrozo() {
 		while (this.trozosTarta != 0)
 			try {
-				this.wait();
+				wait();
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
