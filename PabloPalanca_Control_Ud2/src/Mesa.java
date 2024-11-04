@@ -17,7 +17,7 @@ public class Mesa {
 	
 	//Método al que llamará la clase madre para dejar los trozos de tarta
 	public synchronized void dejarTrozo() {
-		while (this.trozosTarta != 0)
+		while (this.trozosTarta > 0)
 			try {
 				wait();
 			} catch (InterruptedException e) {
